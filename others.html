@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopy7_others</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width:100%;
+    position: sticky;
+    top:0;
+    left:0;
+    box-shadow: 5px 5px 8px  rgba(13, 62, 107, 0.877);          /*     rgba(1, 45, 87, 0.87) */
+    z-index:10;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:  rgba(13, 62, 107, 0.877);
+}
+#menu ul{
+    display: flex;
+    justify-content:flex-end;
+}
+#menu ul li{
+    display: inline;
+    margin-left: 70px;
+    margin-right: 15px;
+    padding: 10px;
+    opacity: 0.7;
+}
+#menu ul li:hover{
+    padding:10px;
+    background-color: rgba(13, 62, 107, 0.877);
+    border-radius: 15px;
+}
+#menu ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: 800;
+}
+#port h2{
+    margin-left:20px;
+     color: white;
+}
+#otherhome{
+    background:url('obk1.jpg') no-repeat center center/cover;
+    width:100%;
+    background-attachment: fixed;
+}
+.dpic{
+    width:300px;
+    height:350px;
+}
+.dis{
+    display: inline-block;
+    width:45%;
+}
+.ib{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 80px;
+    margin-bottom: 10%;
+    border: 1px solid rgba(13, 62, 107, 0.877);
+    border-radius: 5px 5px;
+    padding:15px;
+    text-align: center;
+    background-color:rgba(13, 62, 107, 0.616);
+}
+.ib p{
+    padding:3px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.ib button{
+    padding:3px;
+    width:60px;
+    border: 0.7px solid rgb(13, 62, 107);
+    background-color:rgba(13, 62, 107, 0.877);
+    border-radius: 10px 10px;
+    margin-right: 4px;
+    font-weight: bold;
+}
+input{
+    border:none;
+    border-radius: 10px 10px;
+    padding:5px;
+    background-color:rgb(161, 192, 221) ;
+    font-weight: bold; font-size:15px; 
+}
+#button{
+    width:80px;
+    padding:10px;
+    margin-right: 3px;
+    border: 0.7px solid black;
+    border-radius: 5px;
+    background-color:black;
+    color:white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+button:hover{
+    background-color:rgb(161, 192, 221);
+    border: 0.7px solid rgb(13, 62, 107);
+
+}
+#button:hover{
+    background-color:rgba(13, 62, 107, 0.877);
+
+}
+.ib img{
+    width: 300px;
+    height: 350px;
+    padding:20px;
+    position: relative;
+    animation:image 0.7s;
+}
+#img{
+    animation-timing-function: linear;
+}
+@keyframes image{
+    from{padding-left:0px;}
+    to{padding-left :20px}
+}
+footer{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color:transparent;
+    padding-top:3px;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav style="display:block;">
+        <div id="port" style="display:inline-block"><h2>OTHERS</h2></div>
+        <div id="menu" style="display:inline-block; width:85%">
+          <ul>
+          <li><a href="dog.html">Dog</a></li>
+          <li><a href="cat.html">Cat</a></li>
+          <li><a href="birds.html">Birds</a></li>
+          <li><a href="others.html">Others</a></li>
+        </ul></div>
+      <div style="display:inline-block; width:5%;">
+          <p><a href="index.html" style='padding-top:5px'><img src="icons8-home.gif" style="width:30px; height:30px; border:none; border-radius:20px;margin-left:10px;"></a></p>
+          </div>
+      </nav>
+    <!-- home -->
+    <div id="otherhome">
+        <div id="bird" style="display:block;">
+            <div class="dis">
+            <div class="ib"><img src="m11.jpg" class="dpic"><br><h4>Type: Rabbit</h4>
+               <p>Quantity: <input type="number" id="op1" placeholder="How many pet's you buy"></p>
+               <div style="margin-top:10px;"><button onclick="rabbit()">BUY</button><input type='text' id="o1" placeholder="1000" readonly></div></div></div>
+               <div class="dis">
+           <div class="ib"><img src="ms1.jpg" class="dpic"><br><h4>Type: Rat</h4>
+               <p>Quantity: <input type="number" id="op2" placeholder="How many pet's you buy"></p>
+               <div style="margin-top:10px;"><button onclick="rat()">BUY</button><input type='text' id="o2" placeholder="800" readonly></div></div></div>
+               <div class="dis">
+               <div class="ib"><img src="f1.jpg" class="dpic"><br><h4>Type: Fish</h4>
+                           <p>Quantity: <input type="number" id="op3" placeholder="How many pet's you buy"></p>
+           <div style="margin-top:10px;"><button onclick="fish()">BUY</button><input type='text' id="o3" placeholder="376" readonly></div></div></div>
+           <div class="dis">
+           <div class="ib"><img src="guinea.jpg" class="dpic"><br><h4>Type: Guinea</h4>
+           <p>Quantity: <input type="number" id="op4" placeholder="How many pet's you buy"></p>
+           <div style="margin-top:10px;"><button onclick="gui()">BUY</button><input type='text' id="o4" placeholder="1000" readonly></div></div></div>
+   </div>
+    <footer>
+    <div style="text-align:end;">
+        <button onclick="other()" id="button">Buy Now</button><br>
+        <input type="text"  id="btn" placeholder="Total amount"  style="padding:10px; width:100px; font-weight: bold; font-size:15px; margin-right:10px;" readonly>
+   </div>
+</footer>
+      </div>
+      
+      <script>
+        function rabbit(){
+            let q=parseInt(document.getElementById('op1').value); 
+            if(0<q){
+                price=1000*q
+                let o1=document.getElementById('o1').value=price
+            return o1
+            }else{
+                let o1=0;
+            return o1
+            }
+            }
+            function rat(){
+            let q=parseInt(document.getElementById('op2').value); 
+            if(0<q){
+                price=800*q
+                let o2=document.getElementById('o2').value=price
+            return o2
+            }
+            else{
+                let o2=0;
+            return o2
+            }
+            }
+            function fish(){
+            let q=parseInt(document.getElementById('op3').value); 
+            if(0<q){
+                price=376*q
+                let o3=document.getElementById('o3').value=price
+            return o3
+            }
+            else{
+                let o3=0;
+            return o3
+            }
+            }
+            function gui(){
+            let q=parseInt(document.getElementById('op4').value); 
+            if(0<q){
+                price=1000*q
+                let o4=document.getElementById('o4').value=price
+            return o4
+            }
+            else{
+                let o4=0;
+            return o4
+            }
+            }
+            function other(){
+                let a=rabbit()
+                let b=rat()
+                let c=fish()
+                let e=gui()
+                let d=a+b+c+e
+                let t=document.getElementById('btn').value=d
+                
+            }
+    </script>
+</body>
+
+
+</html>

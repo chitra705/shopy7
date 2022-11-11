@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopy7 pets_Register</title>
+    <style>
+        #bk{
+            background: url("peakpx4.jpg") no-repeat center/cover;
+            width:auto;
+            height: 600px;
+            color:rgba(255, 255, 255, 0.89);
+            position: relative;
+        }
+        .nav{
+            display: block;
+            margin-top: 20px;
+        }
+        .name{
+            display: inline-block;
+            width:5%;
+        }
+        .menu{
+            display: inline-block;
+            width:92%;
+        }
+        .menu ul li{
+            display: inline;
+            margin-left: 110px;
+            font-weight: bold;
+        }
+        .menu ul li a{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.89);
+            padding:10px;
+            font-size: 20px;
+        }
+        .menu ul li a:hover{
+            background-color: rgba(255, 255, 255, 0.705);
+            color: black;
+            border: none;
+            border-radius: 4px 4px;
+        }
+        .menu ul{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 40px;
+        }
+        .name p{
+            color: rgb(192, 30, 84);
+            text-align: center;
+            background-color: rgba(54, 50, 50, 0.836);
+            font-style: italic;
+            font-size: 20px;
+            padding:6px;
+            font-weight: bold;
+            margin-left: 4px;
+            border-radius: 5px 5px;
+            border:none;
+            width:60px;
+        }
+        /* form */
+        form{
+            border: none;
+            border-radius: 20px;
+            background-color:rgba(238, 208, 178, 0.664);
+            width:35%;
+            height:450px;
+            font-size: 20px;
+            margin-left:15%;
+        }
+        label{
+            color:rgb(87, 51, 4);
+            font-weight: bold;
+            padding:10px;
+        }
+        input{
+            border: none;
+            border-radius: 10px;
+            padding:6px;
+        }
+        input:hover{
+            background-color: rgba(211, 155, 71, 0.808);
+        }
+        button{
+            border: none;
+            padding: 5px;
+            background-color: bisque;
+            border-radius: 10px;
+            width:80px;
+            font-weight: bold;
+            margin-top: 10px;
+
+        }
+        button:hover{
+            background-color: rgba(211, 155, 71, 0.808);
+
+        }
+        button:active{
+            background-color: rgb(131, 75, 3);
+        }
+        
+        
+             
+          
+    </style>
+</head>
+<body id="bk">
+    <div class="nav">
+    <div class="name"><p>shopy7</p></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Register</a></li>
+                <li><a href="about.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <form style="padding:10px; margin-top:15px" action="shopnow.html" method="post" target="_blank">
+            <pre>
+    <label>Name:         </label> <input type="text" placeholder="Enter name" id="name" required><br>
+    <label>Mobile Number:</label> <input type="number" placeholder="Enter Mobile Number" id="mn" required><br>
+    <label>Gender:       </label> <input type="radio" name='g' id="fe" required>female <input type="radio" name='g' id="ma" required>male<br>
+    <label>Email:        </label> <input type="email" placeholder="abc@gmail.com" id="email" required><br>
+    <label>Password:     </label> <input type="password" placeholder="Enter password" id="psw" required><br>
+    <label>Date:         </label> <input type="date" placeholder="Enter date"><br>
+    <label>Message:      </label> <input type="text" placeholder="Enter your message"><br></pre>
+    <p style="text-align:center"><button>Register</button></p>
+        </form>
+    </div>          
+        
+</body>
+
+</html>
